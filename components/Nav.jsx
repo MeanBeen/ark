@@ -1,5 +1,6 @@
 "use client";
 
+import { PrimaryButton } from "@styles/globals";
 import { Layout, Row, Button } from "antd";
 import Image from "next/image";
 
@@ -20,19 +21,7 @@ const Nav = () => {
           src={"/images/logob.png"}
           style={{ marginLeft: "2%" }}
         />
-        <Button
-          style={{
-            color: "white",
-            letterSpacing: 0.9,
-            fontSize: "12px",
-            fontWeight: 500,
-            backgroundColor: "#ab9169",
-            padding: "20px 20px",
-            marginRight: "5%",
-          }}
-        >
-          FREE CONSULTATION
-        </Button>
+        <PrimaryButton>FREE CONSULTATION</PrimaryButton>
       </Row>
     </Content>
   );

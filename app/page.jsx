@@ -2,6 +2,7 @@
 import React from "react";
 import { Layout, Typography, Row, Col, Image } from "antd";
 import { NodeNextRequest } from "next/dist/server/base-http/node";
+import { PrimaryButton, PrimaryHeading, PrimaryText } from "@styles/globals";
 
 const { Content } = Layout;
 const { Text, Title } = Typography;
@@ -11,7 +12,7 @@ const Homepage = () => {
     <Content>
       <Content
         style={{
-          height: "50vh",
+          height: "70vh",
           width: "100%",
           backgroundColor: "#e1d8cb",
         }}
@@ -21,17 +22,28 @@ const Homepage = () => {
             <Image
               alt="man writing"
               preview={false}
-              width={500}
-              height={300}
+              width={600}
+              height={390}
               src={"/images/writing.png"}
-              style={{ borderRadius: "5px" }}
+              style={{ borderRadius: "8px" }}
             />
           </Col>
           <Col style={{ marginTop: "5%" }}>
-            <Title level={2}>ARK LEGAL SOLUTIONS</Title>
-            <Text>
-              Straightforward I Trustworthy Litigation Know-how to win
-            </Text>
+            <PrimaryHeading>ARK LEGAL SOLUTIONS</PrimaryHeading>
+            <PrimaryText>
+              Straightforward | Trustworthy Litigation | Know-How to win
+            </PrimaryText>
+            <PrimaryButton
+              style={{
+                marginTop: "15%",
+                fontSize: "15px",
+                padding: "25px 25px",
+                background:
+                  "linear-gradient(rgba(131, 102, 62) 0%, rgb(176, 150, 106) 100%)",
+              }}
+            >
+              Contact Now →
+            </PrimaryButton>
           </Col>
         </Row>
       </Content>
