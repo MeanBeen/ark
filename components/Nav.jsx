@@ -1,29 +1,81 @@
 "use client";
 
-import { PrimaryButton } from "@styles/globals";
-import { Layout, Row, Button } from "antd";
+import {
+  FacebookFilled,
+  FacebookOutlined,
+  LinkedinFilled,
+  LinkedinOutlined,
+  MailOutlined,
+  PhoneFilled,
+  PhoneOutlined,
+  WhatsAppOutlined,
+} from "@ant-design/icons";
+import { PrimaryButton, PrimaryText } from "@styles/globals";
+import { Divider, Layout, Row, Space, Col } from "antd";
 import Image from "next/image";
 
-const { Content } = Layout;
+const { Header, Content } = Layout;
 
 const Nav = () => {
   return (
-    <Content style={{ width: "100%" }}>
+    <Header style={{ backgroundColor: "#eeeae4", margin: 0 }}>
+      <Row align={"middle"} justify={"space-between"} style={{ margin: 0 }}>
+        <Space>
+          <a
+            href="https://www.facebook.com/profile.php?id=100066929614602"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FacebookFilled style={{ fontSize: "20px", color: "#a37e34" }} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/amir-rafiq-khan-663a0850/?originalSubdomain=pk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedinFilled style={{ fontSize: "20px", color: "#a37e34" }} />
+          </a>
+          <a
+            href="https://wa.me/+923339853797"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <WhatsAppOutlined style={{ fontSize: "20px", color: "#a37e34" }} />
+          </a>
+        </Space>
+        <Space size={20} direction="horizontal">
+          <PhoneFilled style={{ fontSize: "20px", color: "#a9814a" }} />
+          <PrimaryText style={{ color: "#a9814a" }}>03339853797</PrimaryText>
+          <MailOutlined style={{ fontSize: "20px", color: "#a9814a" }} />
+          <PrimaryText style={{ color: "#a9814a" }}>
+            Amir_pukhtoon@gmail.com
+          </PrimaryText>
+        </Space>
+        <Divider
+          style={{
+            display: "inline-block",
+            borderColor: "#a37e34",
+            margin: 0,
+            padding: 0,
+          }}
+        />
+      </Row>
+
       <Row
+        tyle={{ backgroundColor: "#eeeae4" }}
         align={"middle"}
         justify={"space-between"}
-        style={{ backgroundColor: "#e1d8cb" }}
       >
         <Image
           alt="ark logo"
           width={100}
           height={100}
-          src={"/images/logob.png"}
+          src={"/images/logo.png"}
           style={{ marginLeft: "2%" }}
         />
         <PrimaryButton>FREE CONSULTATION</PrimaryButton>
       </Row>
-    </Content>
+    </Header>
   );
 };
 

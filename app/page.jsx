@@ -12,13 +12,14 @@ const Homepage = () => {
     <Content>
       <Content
         style={{
-          height: "70vh",
+          overflow: "hidden",
+          height: "65vh",
           width: "100%",
-          backgroundColor: "#e1d8cb",
+          backgroundColor: "#eeeae4",
         }}
       >
         <Row justify={"center"}>
-          <Col style={{ marginRight: "5%", marginTop: "5%" }}>
+          <Col style={{ marginRight: "5%", marginTop: "7%" }}>
             <Image
               alt="man writing"
               preview={false}
@@ -28,7 +29,7 @@ const Homepage = () => {
               style={{ borderRadius: "8px" }}
             />
           </Col>
-          <Col style={{ marginTop: "5%" }}>
+          <Col style={{ marginTop: "7%" }}>
             <PrimaryHeading>ARK LEGAL SOLUTIONS</PrimaryHeading>
             <PrimaryText>
               Straightforward | Trustworthy Litigation | Know-How to win
@@ -45,6 +46,154 @@ const Homepage = () => {
               Contact Now →
             </PrimaryButton>
           </Col>
+        </Row>
+      </Content>
+      <Content>
+        <Row
+          style={{ height: "40vh" }}
+          align={"middle"}
+          justify={"space-evenly"}
+        >
+          <Col style={{ width: "300px" }}>
+            <Image
+              width={80}
+              height={70}
+              src="/images/L1.png"
+              alt=""
+              preview={false}
+            />
+            <PrimaryHeading style={{ fontSize: "18px", letterSpacing: 1.2 }}>
+              LAW FIRM
+            </PrimaryHeading>
+            <PrimaryText style={{ fontSize: "17px", lineHeight: 1.7 }}>
+              As your attorney I will act as both legal advisor and advocate,
+              guiding individuals and businesses through intricate legal
+              processes.
+            </PrimaryText>
+          </Col>
+          <Col style={{ width: "300px" }}>
+            <Image
+              width={79}
+              height={70}
+              src="/images/L2.png"
+              alt=""
+              preview={false}
+            />
+            <PrimaryHeading style={{ fontSize: "18px", letterSpacing: 1.2 }}>
+              CONFIDENTIAL
+            </PrimaryHeading>
+            <PrimaryText style={{ fontSize: "17px", lineHeight: 1.7 }}>
+              Your information is held in strict confidence with us.We
+              prioritize safeguarding your sensitive data.Rest assured, your
+              case details remain private.
+            </PrimaryText>
+          </Col>
+          <Col style={{ width: "300px" }}>
+            <Image
+              width={79}
+              height={70}
+              src="/images/L3.png"
+              alt=""
+              preview={false}
+            />
+            <PrimaryHeading style={{ fontSize: "18px", letterSpacing: 1.2 }}>
+              LEGAL PROTECTION
+            </PrimaryHeading>
+            <PrimaryText style={{ fontSize: "17px", lineHeight: 1.7 }}>
+              We provide robust legal protection for our clients.Your rights and
+              interests are our top priority.Rest assured for safeguarding your
+              legal rights.
+            </PrimaryText>
+          </Col>
+        </Row>
+      </Content>
+      <Content style={{ backgroundColor: "#eeeae4", height: "50vh" }}>
+        <Row justify={"center"}>
+          <PrimaryHeading style={{ fontWeight: "normal" }}>
+            Legal Practice Areas
+          </PrimaryHeading>
+        </Row>
+        <Row
+          style={{ marginTop: "3%" }}
+          align={"bottom"}
+          justify={"space-evenly"}
+        >
+          <Col style={{ width: "300px" }}>
+            <Image
+              alt=""
+              src="/images/real.png"
+              width={"300px"}
+              height={"190px"}
+              preview={false}
+              style={{ borderRadius: "5px" }}
+            />
+            <PrimaryText
+              style={{
+                fontSize: "15px",
+                fontWeight: "bold",
+                letterSpacing: 1,
+              }}
+            >
+              CIVIL LAW
+              <br />
+            </PrimaryText>
+            <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
+              LEARN MORE →
+            </PrimaryText>
+          </Col>
+          <Col style={{ width: "300px" }}>
+            <Image
+              alt=""
+              src="/images/criminal.png"
+              width={"300px"}
+              height={"190px"}
+              preview={false}
+              style={{ borderRadius: "5px" }}
+            />
+            <PrimaryText
+              style={{ fontSize: "15px", fontWeight: "bold", letterSpacing: 1 }}
+            >
+              CRIMINAL LAW <br />
+            </PrimaryText>
+            <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
+              LEARN MORE →
+            </PrimaryText>
+          </Col>
+          <Col style={{ width: "300px" }}>
+            <Image
+              alt=""
+              src="/images/cyber.png"
+              width={"300px"}
+              height={"190px"}
+              preview={false}
+              style={{ borderRadius: "5px" }}
+            />
+            <PrimaryText
+              style={{ fontSize: "15px", fontWeight: "bold", letterSpacing: 1 }}
+            >
+              CYBER CRIME <br />
+            </PrimaryText>
+            <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
+              LEARN MORE →
+            </PrimaryText>
+          </Col>
+        </Row>
+      </Content>
+      <Content>
+        <Row style={{ height: "50vh" }}>
+          <Col>
+            <PrimaryHeading style={{ fontWeight: "normal" }}>
+              Free Consultation
+              <br />
+            </PrimaryHeading>
+            <PrimaryText
+              style={{ display: "block", width: "400px", fontSize: "20px" }}
+            >
+              Law is a complex matter that can lead to significant problems if
+              disregarded. Allow us to assist you!
+            </PrimaryText>
+          </Col>
+          <Col></Col>
         </Row>
       </Content>
     </Content>
