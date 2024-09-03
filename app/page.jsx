@@ -1,21 +1,33 @@
 "use client";
 import React from "react";
-import { Layout, Typography, Row, Col, Image } from "antd";
+import { Layout, Typography, Row, Col, Image, Input, Select } from "antd";
 import { NodeNextRequest } from "next/dist/server/base-http/node";
-import { PrimaryButton, PrimaryHeading, PrimaryText } from "@styles/globals";
+import {
+  PrimaryButton,
+  PrimaryHeading,
+  PrimaryInput,
+  PrimaryText,
+  StyledMessage,
+  StyledSelector,
+} from "@styles/globals";
 
 const { Content } = Layout;
 const { Text, Title } = Typography;
+const { TextArea } = Input;
 
 const Homepage = () => {
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
+  };
   return (
     <Content>
       <Content
         style={{
           overflow: "hidden",
-          height: "65vh",
+          padding: "20px 80px",
           width: "100%",
           backgroundColor: "#eeeae4",
+          minHeight: "60vh",
         }}
       >
         <Row justify={"center"}>
@@ -48,9 +60,17 @@ const Homepage = () => {
           </Col>
         </Row>
       </Content>
-      <Content>
+      <Content
+        style={{
+          padding: "20px 80px",
+          minHeight: "50vh",
+        }}
+      >
         <Row
-          style={{ height: "40vh" }}
+          // style={{ height: "350px" }}
+          style={{
+            minHeight: "50vh",
+          }}
           align={"middle"}
           justify={"space-evenly"}
         >
@@ -107,7 +127,13 @@ const Homepage = () => {
           </Col>
         </Row>
       </Content>
-      <Content style={{ backgroundColor: "#eeeae4", height: "50vh" }}>
+      <Content
+        style={{
+          backgroundColor: "#eeeae4",
+          padding: "20px 80px",
+          minHeight: "50vh",
+        }}
+      >
         <Row justify={"center"}>
           <PrimaryHeading style={{ fontWeight: "normal" }}>
             Legal Practice Areas
@@ -179,21 +205,67 @@ const Homepage = () => {
           </Col>
         </Row>
       </Content>
-      <Content>
-        <Row style={{ height: "50vh" }}>
+      <Content
+        style={{
+          padding: "20px 80px",
+        }}
+      >
+        <Row
+          align={"middle"}
+          justify={"space-evenly"}
+          style={{ minHeight: "50vh" }}
+        >
           <Col>
             <PrimaryHeading style={{ fontWeight: "normal" }}>
               Free Consultation
               <br />
             </PrimaryHeading>
             <PrimaryText
-              style={{ display: "block", width: "400px", fontSize: "20px" }}
+              style={{ display: "block", width: "420px", fontSize: "20px" }}
             >
               Law is a complex matter that can lead to significant problems if
               disregarded. Allow us to assist you!
             </PrimaryText>
           </Col>
-          <Col></Col>
+
+          <Col>
+            <Row align={"bottom"} gutter={[8, 8]} style={{ width: "70%" }}>
+              <Col span={12}>
+                <PrimaryInput size="middle" placeholder="First name*" />
+              </Col>
+              <Col span={12}>
+                <PrimaryInput size="middle" placeholder="Last name*" />
+              </Col>
+              <Col span={12}>
+                <PrimaryInput size="middle" placeholder="Email*" />
+              </Col>
+              <Col span={12}>
+                <PrimaryInput size="middle" placeholder="Phone*" />
+              </Col>
+            </Row>
+            <StyledSelector
+              defaultValue="Please Choose One Option"
+              onChange={handleChange}
+              options={[
+                {
+                  value: "jack",
+                  label: "Civil Law",
+                },
+                {
+                  value: "lucy",
+                  label: "Criminal Law",
+                },
+                {
+                  value: "Yiminghe",
+                  label: "CyberCrime Law",
+                },
+              ]}
+            />
+            <StyledMessage rows={4} placeholder="Message*" />
+            <PrimaryButton style={{ width: "69%", borderRadius: "0px" }}>
+              SUBMIT NOW
+            </PrimaryButton>
+          </Col>
         </Row>
       </Content>
     </Content>
