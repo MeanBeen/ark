@@ -68,7 +68,7 @@ const Nav = () => {
           alt="ark logo"
           width={100}
           height={100}
-          src={"/ark/images/logo.png"}
+          src={"/images/logo.png"}
           style={{ marginLeft: "2%" }}
         />
         <Link href={"#contact"} passHref>
