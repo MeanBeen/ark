@@ -70,6 +70,7 @@ const Nav = () => {
           src={"/images/logo.png"}
           style={{ marginLeft: "2%" }}
         />
+
         <PrimaryButton>FREE CONSULTATION</PrimaryButton>
       </Row>
     </Header>
