@@ -10,8 +10,9 @@ import {
 import { PrimaryButton, PrimaryText } from "@styles/globals";
 import { Divider, Layout, Row, Space } from "antd";
 import Image from "next/image";
+import Link from "next/link";
 
-const { Header, Content } = Layout;
+const { Header } = Layout;
 
 const Nav = () => {
   return (
@@ -70,8 +71,9 @@ const Nav = () => {
           src={"/images/logo.png"}
           style={{ marginLeft: "2%" }}
         />
-
-        <PrimaryButton>FREE CONSULTATION</PrimaryButton>
+        <Link href={"#contact"} passHref>
+          <PrimaryButton>FREE CONSULTATION</PrimaryButton>
+        </Link>
       </Row>
     </Header>
   );

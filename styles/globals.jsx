@@ -8,6 +8,7 @@ const { TextArea } = Input;
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Lora', sans-serif;
+    scroll-behavior: smooth !important; 
    
   }
 `;

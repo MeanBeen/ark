@@ -8,7 +8,7 @@ import {
   PrimaryText,
   StyledImage,
 } from "@styles/globals";
-import Contact from "@components/Contact";
+import Contact from "../Containers/contact/Contact";
 
 const { Content } = Layout;
 
