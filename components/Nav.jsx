@@ -2,16 +2,13 @@
 
 import {
   FacebookFilled,
-  FacebookOutlined,
   LinkedinFilled,
-  LinkedinOutlined,
   MailOutlined,
   PhoneFilled,
-  PhoneOutlined,
   WhatsAppOutlined,
 } from "@ant-design/icons";
 import { PrimaryButton, PrimaryText } from "@styles/globals";
-import { Divider, Layout, Row, Space, Col } from "antd";
+import { Divider, Layout, Row, Space } from "antd";
 import Image from "next/image";
 
 const { Header, Content } = Layout;

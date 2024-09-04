@@ -1,19 +1,18 @@
 "use client";
 import React from "react";
-import { Layout, Typography, Row, Col, Image, Input, Select } from "antd";
-import { NodeNextRequest } from "next/dist/server/base-http/node";
+import { Layout, Row, Col, Image } from "antd";
+
 import {
   PrimaryButton,
   PrimaryHeading,
   PrimaryInput,
   PrimaryText,
+  StyledImage,
   StyledMessage,
   StyledSelector,
 } from "@styles/globals";
 
 const { Content } = Layout;
-const { Text, Title } = Typography;
-const { TextArea } = Input;
 
 const Homepage = () => {
   const handleChange = (value) => {
@@ -24,7 +23,6 @@ const Homepage = () => {
       <Content
         style={{
           overflow: "hidden",
-          padding: "20px 80px",
           width: "100%",
           backgroundColor: "#eeeae4",
           minHeight: "60vh",
@@ -32,7 +30,7 @@ const Homepage = () => {
       >
         <Row justify={"center"}>
           <Col style={{ marginRight: "5%", marginTop: "7%" }}>
-            <Image
+            <StyledImage
               alt="man writing"
               preview={false}
               width={600}
@@ -42,21 +40,30 @@ const Homepage = () => {
             />
           </Col>
           <Col style={{ marginTop: "7%" }}>
-            <PrimaryHeading>ARK LEGAL SOLUTIONS</PrimaryHeading>
-            <PrimaryText>
+            <PrimaryHeading className="effect">
+              ARK LEGAL SOLUTIONS
+            </PrimaryHeading>
+            <PrimaryText className="ease">
               Straightforward | Trustworthy Litigation | Know-How to win
             </PrimaryText>
-            <PrimaryButton
-              style={{
-                marginTop: "15%",
-                fontSize: "15px",
-                padding: "25px 25px",
-                background:
-                  "linear-gradient(rgba(131, 102, 62) 0%, rgb(176, 150, 106) 100%)",
-              }}
+            <a
+              href="https://wa.me/+923339853797"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contact Now →
-            </PrimaryButton>
+              <PrimaryButton
+                className="easeb"
+                style={{
+                  marginTop: "15%",
+                  fontSize: "15px",
+                  padding: "25px 25px",
+                  background:
+                    "linear-gradient(rgba(131, 102, 62) 0%, rgb(176, 150, 106) 100%)",
+                }}
+              >
+                Contact Now →
+              </PrimaryButton>
+            </a>
           </Col>
         </Row>
       </Content>
