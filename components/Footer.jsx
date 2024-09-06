@@ -14,7 +14,7 @@ import {
 } from "@ant-design/icons";
 
 const { Footer } = Layout;
-const { Text, Title } = Typography;
+const { Title } = Typography;
 
 const Foot = () => {
   return (
@@ -34,7 +34,7 @@ const Foot = () => {
             </PrimaryText>
             <PrimaryText style={{ color: "#a37e34" }}>
               <MailOutlined style={{ marginRight: "3%" }} />
-              Amir_pukhtoon@gmail.com
+              amir_pukhtoon70@gmail.com
             </PrimaryText>
             <PrimaryText style={{ color: "#a37e34" }}>
               <ClockCircleOutlined style={{ marginRight: "3%" }} /> Mon - Fri
@@ -43,6 +43,7 @@ const Foot = () => {
             <PrimaryText style={{ color: "#a37e34" }}>
               <PushpinOutlined style={{ marginRight: "3%" }} /> Off # 1,Ground
               Floor,Yousaf Ali Shah Shaheed block,District & Session Courts
+              Mardan
             </PrimaryText>
           </Space>
         </Col>

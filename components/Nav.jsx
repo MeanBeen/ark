@@ -7,7 +7,7 @@ import {
   PhoneFilled,
   WhatsAppOutlined,
 } from "@ant-design/icons";
-import { PrimaryButton, PrimaryText } from "@styles/globals";
+import { PrimaryButton, PrimaryText, StyledRow } from "@styles/globals";
 import { Divider, Layout, Row, Space } from "antd";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,8 +16,12 @@ const { Header } = Layout;
 
 const Nav = () => {
   return (
-    <Header style={{ backgroundColor: "#eeeae4", margin: 0 }}>
-      <Row align={"middle"} justify={"space-between"} style={{ margin: 0 }}>
+    <Header
+      style={{
+        backgroundColor: "#eeeae4",
+      }}
+    >
+      <StyledRow align={"middle"} justify={"space-between"}>
         <Space>
           <a
             href="https://www.facebook.com/profile.php?id=100066929614602"
@@ -46,7 +50,7 @@ const Nav = () => {
           <PrimaryText style={{ color: "#a9814a" }}>03339853797</PrimaryText>
           <MailOutlined style={{ fontSize: "20px", color: "#a9814a" }} />
           <PrimaryText style={{ color: "#a9814a" }}>
-            Amir_pukhtoon@gmail.com
+            Amir_pukhtoon70@gmail.com
           </PrimaryText>
         </Space>
         <Divider
@@ -57,7 +61,7 @@ const Nav = () => {
             padding: 0,
           }}
         />
-      </Row>
+      </StyledRow>
 
       <Row
         tyle={{ backgroundColor: "#eeeae4" }}

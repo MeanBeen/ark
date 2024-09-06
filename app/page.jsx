@@ -1,5 +1,4 @@
 "use client";
-
 import { Layout, Row, Col, Image } from "antd";
 
 import {
@@ -17,14 +16,13 @@ const Homepage = () => {
     <Content>
       <Content
         style={{
-          overflow: "hidden",
           width: "100%",
           backgroundColor: "#eeeae4",
           minHeight: "60vh",
         }}
       >
         <Row justify={"center"}>
-          <Col style={{ marginRight: "5%", marginTop: "7%" }}>
+          {/* <Col style={{ marginRight: "5%", marginTop: "7%" }}>
             <StyledImage
               alt="man writing"
               preview={false}
@@ -32,6 +30,23 @@ const Homepage = () => {
               height={390}
               src={"/images/writing.png"}
               style={{ borderRadius: "8px" }}
+            />
+          </Col> */}
+          <Col
+            xs={24} // Full width on mobile
+            md={12} // Half width on medium screens
+            style={{ marginTop: "7%", textAlign: "center" }} // Center align on mobile
+          >
+            <StyledImage
+              alt="man writing"
+              preview={false}
+              src={"/images/writing.png"}
+              style={{
+                borderRadius: "8px",
+                width: "100%", // Make the image responsive
+                maxWidth: "600px", // Limit maximum width for larger screens
+                height: "auto", // Maintain aspect ratio
+              }}
             />
           </Col>
           <Col style={{ marginTop: "7%" }}>
@@ -62,6 +77,7 @@ const Homepage = () => {
           </Col>
         </Row>
       </Content>
+
       <Content
         style={{
           padding: "20px 80px",
@@ -165,9 +181,9 @@ const Homepage = () => {
               CIVIL LAW
               <br />
             </PrimaryText>
-            <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
+            {/* <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
               LEARN MORE →
-            </PrimaryText>
+            </PrimaryText> */}
           </Col>
           <Col style={{ width: "300px" }}>
             <Image
@@ -183,9 +199,9 @@ const Homepage = () => {
             >
               CRIMINAL LAW <br />
             </PrimaryText>
-            <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
+            {/* <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
               LEARN MORE →
-            </PrimaryText>
+            </PrimaryText> */}
           </Col>
           <Col style={{ width: "300px" }}>
             <Image
@@ -201,9 +217,9 @@ const Homepage = () => {
             >
               CYBER CRIME <br />
             </PrimaryText>
-            <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
+            {/* <PrimaryText style={{ color: "#a9814a", fontSize: "12px" }}>
               LEARN MORE →
-            </PrimaryText>
+            </PrimaryText> */}
           </Col>
         </Row>
       </Content>

@@ -1,6 +1,6 @@
 "use client";
 import styled, { createGlobalStyle, keyframes } from "styled-components";
-import { Button, Input, Select, Typography, Image } from "antd";
+import { Button, Input, Select, Typography, Image, Row } from "antd";
 
 const { Text, Title } = Typography;
 const { TextArea } = Input;
@@ -10,6 +10,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Lora', sans-serif;
     scroll-behavior: smooth !important; 
    
+  }
+`;
+
+const StyledRow = styled(Row)`
+  @media (max-width: 768px) {
+    display: none !important;
   }
 `;
 
@@ -171,6 +177,7 @@ export {
   StyledSelector,
   StyledMessage,
   StyledImage,
+  StyledRow,
 };
 
 // font family and primary button primary color = #e1d8cb
