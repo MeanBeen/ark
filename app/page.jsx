@@ -65,6 +65,7 @@ const Homepage = () => {
                 className="easeb"
                 style={{
                   marginTop: "15%",
+                  marginLeft: "3%",
                   fontSize: "15px",
                   padding: "25px 25px",
                   background:

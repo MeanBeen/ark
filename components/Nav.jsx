@@ -50,7 +50,7 @@ const Nav = () => {
           <PrimaryText style={{ color: "#a9814a" }}>03339853797</PrimaryText>
           <MailOutlined style={{ fontSize: "20px", color: "#a9814a" }} />
           <PrimaryText style={{ color: "#a9814a" }}>
-            Amir_pukhtoon70@gmail.com
+            amirpukhtoon70@gmail.com
           </PrimaryText>
         </Space>
         <Divider

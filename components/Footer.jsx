@@ -34,7 +34,7 @@ const Foot = () => {
             </PrimaryText>
             <PrimaryText style={{ color: "#a37e34" }}>
               <MailOutlined style={{ marginRight: "3%" }} />
-              amir_pukhtoon70@gmail.com
+              amirpukhtoon70@gmail.com
             </PrimaryText>
             <PrimaryText style={{ color: "#a37e34" }}>
               <ClockCircleOutlined style={{ marginRight: "3%" }} /> Mon - Fri
@@ -43,7 +43,7 @@ const Foot = () => {
             <PrimaryText style={{ color: "#a37e34" }}>
               <PushpinOutlined style={{ marginRight: "3%" }} /> Off # 1,Ground
               Floor,Yousaf Ali Shah Shaheed block,District & Session Courts
-              Mardan
+              Mardan.
             </PrimaryText>
           </Space>
         </Col>
